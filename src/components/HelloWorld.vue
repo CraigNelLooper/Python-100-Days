@@ -104,8 +104,9 @@
       </v-carousel>
       </v-container>
     </section>
+    <section>
     <v-container style="max-width: 80vw">
-      <v-row class="text-right" align="center">
+      <v-row  class="text-right" align="center">
         <v-col cols="12" md="6">
           <h1 style="font-size:36px">Welcome to Daskrans Spring Water</h1>
           <p>
@@ -163,6 +164,7 @@
         </v-col>
       </v-row>
     </v-container>
+    </section>
   </div>
 </template>
 
@@ -332,4 +334,6 @@ h1 {
     font-size: 24px;
   }
 }
+
+
 </style>

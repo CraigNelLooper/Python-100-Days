@@ -3,12 +3,14 @@
     <v-app-bar app color="white" flat>
       <v-container class="py-0 fill-height">
         <v-app-bar-nav-icon class="hidden-sm-and-up"></v-app-bar-nav-icon>
-        <v-img class="mr-2" contain max-height="64px" max-width="64px" src="@/assets/1.png"></v-img>
-        <v-toolbar-title class="mr-4" style="font-family:'Cinzel', serif; font-size:24px ; font-weight:700"> Daskrans</v-toolbar-title>
+        <router-link to="/">
+        <v-img class="mr-2" contain max-height="80px" max-width="80px" src="@/assets/1.png"></v-img>
+        </router-link>
+        <v-toolbar-title class="mr-4 hidden-sm-and-down" style="font-family:'Cinzel', serif; font-size:24px ; font-weight:700"> Daskrans</v-toolbar-title>
         <v-spacer></v-spacer>
         <div class="hidden-sm-and-down">
-          <v-btn color="primary" v-for="link in links" :key="link" text>
-            {{ link }}
+          <v-btn color="primary" :to="link.link" v-for="link in links" :key="link" text>
+            {{ link.text }}
           </v-btn>
 
           <v-btn disabled tile elevation="2" color="secondary">Aetera Token</v-btn>
@@ -42,7 +44,7 @@
 <script>
 export default {
   data: () => ({
-    links: ["About Us", "Where to buy",  "The People", "Contact us",],
+    links: [{text:"About Us", link:"/about"}, {text:"Where to buy", link:"/wheretobuy"},  {text:"The People",link:"/thepeople"}, {text:"Contact us", link:"/contactus"},],
   }),
 };
 </script>
