@@ -69,7 +69,7 @@
 
       <!--Content ends-->
     </section>
-    <section>
+    <!-- <section>
       <div class="text-center mt-4"><h1 style="font-size : 48px">Photos from the ground</h1></div>
       <v-container>
       <v-carousel style="border-radius:8px" cycle height="76vh">
@@ -103,7 +103,7 @@
         </v-carousel-item>
       </v-carousel>
       </v-container>
-    </section>
+    </section> -->
     <section>
     <v-container style="max-width: 80vw">
       <v-row  class="text-right" align="center">
